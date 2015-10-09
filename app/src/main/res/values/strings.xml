@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GeekHubLesson1</string>
+    <string name="button">Execute</string>
+    <string name="textFirst">Insert your wish:</string>
+</resources>
