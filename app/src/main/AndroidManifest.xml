@@ -16,7 +16,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".Lesson1Activity"></activity>
+        <activity android:name=".Lesson2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

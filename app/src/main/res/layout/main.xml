@@ -13,7 +13,7 @@
     <Button
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:text="Lesson1"
+        android:text="@string/btnLesson1"
         android:id="@+id/btnLesson1"
         android:layout_gravity="center_vertical"
         android:onClick="lesson1" />
@@ -21,6 +21,7 @@
     <Button
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:text="Lesson2"
-        android:id="@+id/btnLesson2" />
+        android:text="@string/btnLesson2"
+        android:id="@+id/btnLesson2"
+        android:onClick="lesson2" />
 </LinearLayout>
