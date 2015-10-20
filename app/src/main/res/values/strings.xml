@@ -3,6 +3,7 @@
     <string name="button">Execute</string>
     <string name="btnLesson1">Lesson1</string>
     <string name="btnLesson2">Lesson2</string>
+    <string name="btnLesson3">Lesson3</string>
     <string name="btnFactorial">Factorial</string>
     <string name="btnFibonacci">Fibonacci</string>
     <string name="textFirst">Insert your wish:</string>

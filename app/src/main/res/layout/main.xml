@@ -24,4 +24,11 @@
         android:text="@string/btnLesson2"
         android:id="@+id/btnLesson2"
         android:onClick="lesson2" />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Lesson3"
+        android:id="@+id/btnLesson3"
+        android:onClick="lesson3" />
 </LinearLayout>
