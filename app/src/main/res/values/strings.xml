@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GeekHubLessons1-2</string>
+    <string name="app_name">GeekHubLessons1-4</string>
     <string name="button">Execute</string>
     <string name="btnLesson1">Lesson1</string>
     <string name="btnLesson2">Lesson2</string>
@@ -9,5 +9,11 @@
     <string name="textFirst">Insert your wish:</string>
     <string name="textLesson2">Insert number:</string>
     <string name="textResult">Result is: </string>
+    <string name="btnLesson4">Lesson4</string>
+    <string name="btnLesson4Next">Next</string>
+    <string name="btnLesson4Preview">Preview</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -23,7 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Lesson3Activity">
+        <activity android:name=".Lesson3Activity"></activity>
+        <activity android:name=".Lesson4Activity">
         </activity>
     </application>
 
