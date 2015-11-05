@@ -15,6 +15,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnLesson4Preview"
+        android:text="@string/btnLesson4Prev"
         android:id="@+id/lesson4btnPrev" />
 </LinearLayout>
