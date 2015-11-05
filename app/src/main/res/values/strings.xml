@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GeekHubLessons1-4</string>
+    <string name="app_name">GeekHubLessons1-5</string>
     <string name="button">Execute</string>
     <string name="btnLesson1">Lesson1</string>
     <string name="btnLesson2">Lesson2</string>
@@ -12,7 +12,8 @@
     <string name="btnLesson4">Lesson4</string>
     <string name="btnLesson4Next">Next</string>
     <string name="btnLesson4Prev">Previous</string>
-
+    <string name="item1">search</string>
+    <string name="soundoff">sound-off</string>
 
 
 </resources>

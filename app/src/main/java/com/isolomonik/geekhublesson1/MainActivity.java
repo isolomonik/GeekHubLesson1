@@ -3,14 +3,25 @@ package com.isolomonik.geekhublesson1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setBackgroundResource(R.color.primary_dark);
+        toolbar.setTitle(R.string.app_name);
+        // toolbar.setMenu(R.menu.main_menu);
+        setSupportActionBar(toolbar);
+
 
         findViewById(R.id.btnLesson1).setOnClickListener(clickListener);
         findViewById(R.id.btnLesson2).setOnClickListener(clickListener);
@@ -18,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnLesson4).setOnClickListener(clickListener);
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
     }
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
