@@ -19,14 +19,15 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setBackgroundResource(R.color.primary_dark);
         toolbar.setTitle(R.string.app_name);
-        // toolbar.setMenu(R.menu.main_menu);
+     //   toolbar.setLogo(R.drawable.engineering);
+      //  toolbar.setMenu(R.menu.main_menu);
         setSupportActionBar(toolbar);
 
 
-        findViewById(R.id.btnLesson1).setOnClickListener(clickListener);
-        findViewById(R.id.btnLesson2).setOnClickListener(clickListener);
-        findViewById(R.id.btnLesson3).setOnClickListener(clickListener);
-        findViewById(R.id.btnLesson4).setOnClickListener(clickListener);
+//        findViewById(R.id.btnLesson1).setOnClickListener(clickListener);
+//        findViewById(R.id.btnLesson2).setOnClickListener(clickListener);
+//        findViewById(R.id.btnLesson3).setOnClickListener(clickListener);
+//        findViewById(R.id.btnLesson4).setOnClickListener(clickListener);
 
 
     }
@@ -40,20 +41,20 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.btnLesson1:
-                    lesson1(v);
-                    break;
-                case R.id.btnLesson2:
-                    lesson2(v);
-                    break;
-                case R.id.btnLesson3:
-                    lesson3(v);
-                    break;
-                case R.id.btnLesson4:
-                    lesson4(v);
-                    break;
-            }
+//            switch (v.getId()) {
+//                case R.id.btnLesson1:
+//                    lesson1(v);
+//                    break;
+//                case R.id.btnLesson2:
+//                    lesson2(v);
+//                    break;
+//                case R.id.btnLesson3:
+//                    lesson3(v);
+//                    break;
+//                case R.id.btnLesson4:
+//                    lesson4(v);
+//                    break;
+//            }
         }
     };
     public void lesson1(View view) {
