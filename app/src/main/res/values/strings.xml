@@ -1,19 +1,25 @@
 <resources>
     <string name="app_name">GeekHubLessons1-5</string>
     <string name="button">Execute</string>
-    <string name="btnLesson1">Lesson1</string>
-    <string name="btnLesson2">Lesson2</string>
-    <string name="btnLesson3">Lesson3</string>
+    <string name="itemLesson1">Lesson1</string>
+    <string name="itemLesson2">Lesson2</string>
+    <string name="itemLesson3">Lesson3</string>
+    <string name="itemLesson4">Lesson4</string>
+    <string name="itemLesson5">Lesson5</string>
+
     <string name="btnFactorial">Factorial</string>
     <string name="btnFibonacci">Fibonacci</string>
     <string name="textFirst">Insert your wish:</string>
     <string name="textLesson2">Insert number:</string>
     <string name="textResult">Result is: </string>
-    <string name="btnLesson4">Lesson4</string>
+
     <string name="btnLesson4Next">Next</string>
     <string name="btnLesson4Prev">Previous</string>
-    <string name="item1">search</string>
-    <string name="soundoff">sound-off</string>
+
+    <string name="itemBar1">search</string>
+    <string name="ItemBar2">sound-off</string>
+    <string name="open_drawer">open_drawer</string>
+    <string name="close_drawer">close_drawer</string>
 
 
 </resources>

@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/item1"
-        android:title="@string/item1"
+        android:title="@string/itemBar1"
         android:icon="@drawable/ic_magnify"
         app:showAsAction="never" />
     <item
         android:id="@+id/item2"
-        android:title="@string/soundoff"
+        android:title="@string/ItemBar2"
         android:icon="@drawable/ic_bell_off"
         app:showAsAction="always" />
 </menu>
