@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setBackgroundResource(R.color.primary_dark);
         toolbar.setTitle(R.string.app_name);
         //   toolbar.setLogo(R.drawable.engineering);
-        //  toolbar.setMenu(R.menu.main_menu);
+
         setSupportActionBar(toolbar);
     }
 
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lesson5() {
-        Intent intent = new Intent(this, Lesson4Activity.class);
+        Intent intent = new Intent(this, Lesson5Activity.class);
         startActivity(intent);
     }
 }

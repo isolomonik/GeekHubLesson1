@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isolomonik.geekhublesson1.Lesson5Activity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Blink"
+        android:id="@+id/btnBlink"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Bounce"
+        android:id="@+id/btnBounce"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Rotate"
+        android:id="@+id/btnRotate"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SlideUp"
+        android:id="@+id/btnSlideUp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ZoomOut"
+        android:id="@+id/btnZoomOut"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/frameLayout1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/Anim_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:id="@+id/animTV"
+            android:textSize="38sp"></TextView>
+    </FrameLayout>
+
+
+</LinearLayout>
