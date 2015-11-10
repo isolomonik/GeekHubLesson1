@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Lesson1Activity" />
-        <activity android:name=".Lesson2Activity">
+        <activity android:name=".Lesson2Activity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,8 +24,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Lesson3Activity" />
-        <activity android:name=".Lesson4Activity"></activity>
-        <activity android:name=".Lesson5Activity">
+        <activity android:name=".Lesson4Activity" />
+        <activity android:name=".Lesson5Activity" >
+        </activity>
+        <activity android:name=".Lesson6Activity" >
         </activity>
     </application>
 

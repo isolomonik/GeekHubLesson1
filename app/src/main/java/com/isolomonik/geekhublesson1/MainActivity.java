@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.menuLesson5:
                         lesson5();
                         break;
+                    case R.id.menuLesson6:
+                        lesson6();
+                        break;
 
 
                 }
@@ -133,6 +136,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void lesson5() {
         Intent intent = new Intent(this, Lesson5Activity.class);
+        startActivity(intent);
+    }
+
+    public void lesson6() {
+        Intent intent = new Intent(this, Lesson6Activity.class);
         startActivity(intent);
     }
 }
