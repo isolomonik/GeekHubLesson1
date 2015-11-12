@@ -4,7 +4,7 @@ package com.isolomonik.geekhublesson1;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 
-public class Lesson4Activity extends BaseActivity implements ShowType {
+public class Lesson4Activity extends BaseActivity implements OnElementClickListener {
 
 
     public Lesson4NextFragment lesson4NextFragment;
@@ -41,5 +41,10 @@ public class Lesson4Activity extends BaseActivity implements ShowType {
         //  } else {
         getSupportFragmentManager().beginTransaction().replace(R.id.container, lesson4PrevFragment).commit();
         //  }
+    }
+
+    @Override
+    public void itemClick(int position) {
+
     }
 }

@@ -11,17 +11,17 @@ import android.view.ViewGroup;
 
 public class Lesson4BtnFragment extends Fragment {
 
-    ShowType showType;
+    OnElementClickListener onElementClickListener;
 
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.lesson4btnNext:
-                    showType.showNext();
+                    onElementClickListener.showNext();
                     break;
                 case R.id.lesson4btnPrev:
-                    showType.showPrevious();
+                    onElementClickListener.showPrevious();
                     break;
 
             }
@@ -31,7 +31,7 @@ public class Lesson4BtnFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        showType = (ShowType) getActivity();
+        onElementClickListener = (OnElementClickListener) getActivity();
     }
 
     @Override
