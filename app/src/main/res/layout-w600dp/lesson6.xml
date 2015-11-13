@@ -2,25 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Lesson6"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.isolomonik.geekhublesson1.Lesson6Activity"
-    android:orientation="vertical"
-    android:baselineAligned="false">
-
+>
 
     <FrameLayout
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
         android:id="@+id/listFragmentcontainer"
-        android:orientation="horizontal">
+      >
 
         <fragment
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:name="com.isolomonik.geekhublesson1.Lesson6ListFragment"
-            android:id="@+id/fragment3" />
+            android:id="@+id/fragment" />
     </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/detailFramecontainer"
+            >
+
+            <fragment
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:name="com.isolomonik.geekhublesson1.Lesson6DetailFragment"
+                android:id="@+id/fragment2" />
+        </FrameLayout>
+
+
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -36,6 +50,5 @@
             android:minHeight="?attr/actionBarSize" />
 
     </android.support.design.widget.AppBarLayout>
-
 
 </LinearLayout>
