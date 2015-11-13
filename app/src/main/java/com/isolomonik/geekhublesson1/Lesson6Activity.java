@@ -22,8 +22,6 @@ public class Lesson6Activity extends AppCompatActivity implements OnElementClick
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setBackgroundResource(R.color.primary_dark);
         toolbar.setTitle(R.string.itemLesson6);
-        // toolbar.setLogo(R.drawable.engineering);
-//setActionBar(toolbar);
         setSupportActionBar(toolbar);
 
        getSupportActionBar().setHomeButtonEnabled(true);
@@ -32,17 +30,17 @@ public class Lesson6Activity extends AppCompatActivity implements OnElementClick
 
         if (savedInstanceState != null)
             position = savedInstanceState.getInt("position");
-      //  showDetails(position);
+        showDetails(position);
 
     }
 
-//    void showDetails(int pos) {
-//        Lesson6DetailFragment details = (Lesson6DetailFragment) getSupportFragmentManager().findFragmentById(R.id.detailFrame);
-//        if (details == null || details.getPosition() != pos) {
-//            details = Lesson6DetailFragment.newInstance(pos);
-//            getSupportFragmentManager().beginTransaction().replace(R.id.detailFrame, details).commit();
-//        }
-//    }
+    void showDetails(int pos) {
+        Lesson6DetailFragment details = (Lesson6DetailFragment) getSupportFragmentManager().findFragmentById(R.id.detailFramecontainer);
+        if (details == null || details.getPosition() != pos) {
+            details = Lesson6DetailFragment.newInstance(pos);
+            getSupportFragmentManager().beginTransaction().replace(R.id.detailFramecontainer, details).commit();
+        }
+    }
 
 
     @Override
