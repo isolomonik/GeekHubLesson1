@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Lesson6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.isolomonik.geekhublesson1.Lesson6Activity">
+    tools:context="com.isolomonik.geekhublesson1.Lesson6DetailActivity">
+
 
     <android.support.design.widget.AppBarLayout
-        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/view">
 
         <android.support.v7.widget.Toolbar
 
@@ -22,29 +22,17 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <LinearLayout
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-
-        <fragment
-            android:id="@+id/listFragment"
-            android:name="com.isolomonik.geekhublesson1.Lesson6ListFragment"
-            android:layout_width="300dp"
-            android:layout_height="match_parent" />
-
+        android:id="@+id/cont">
 
         <fragment
-            android:id="@+id/detailFragment"
-            android:name="com.isolomonik.geekhublesson1.Lesson6DetailFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"/>
-
-    </LinearLayout>
+            android:name="com.isolomonik.geekhublesson1.Lesson6DetailFragment"
+            android:id="@+id/detailFragment" />
+    </FrameLayout>
 
 </LinearLayout>
-
-
-

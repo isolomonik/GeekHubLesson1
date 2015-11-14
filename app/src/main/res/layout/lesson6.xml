@@ -24,17 +24,17 @@
 
     </android.support.design.widget.AppBarLayout>
 
+
     <FrameLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listFragmentcontainer"
-        android:orientation="horizontal">
+        android:id="@+id/cont">
 
         <fragment
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:name="com.isolomonik.geekhublesson1.Lesson6ListFragment"
-            android:id="@+id/fragment3" />
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:name="com.isolomonik.geekhublesson1.Lesson6ListFragment"
+                 android:id="@+id/listFragment" />
     </FrameLayout>
 
 

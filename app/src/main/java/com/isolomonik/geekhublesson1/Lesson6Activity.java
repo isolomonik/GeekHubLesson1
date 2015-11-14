@@ -1,6 +1,9 @@
 package com.isolomonik.geekhublesson1;
 
+import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +13,12 @@ import android.view.MenuItem;
 
 
 public class Lesson6Activity extends AppCompatActivity implements OnElementClickListener {
+
     private Toolbar toolbar;
+    public Lesson6ListFragment lesson6ListFragment;
+    public Lesson6DetailFragment lesson6DetailFragment;
+  //  private FragmentManager fragmentManager;
+
 
     int position = 0;
 
@@ -25,23 +33,15 @@ public class Lesson6Activity extends AppCompatActivity implements OnElementClick
         setSupportActionBar(toolbar);
 
        getSupportActionBar().setHomeButtonEnabled(true);
- //       getActionBar().setDisplayHomeAsUpEnabled(true);
+       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-        if (savedInstanceState != null)
-            position = savedInstanceState.getInt("position");
-        showDetails(position);
-
-    }
-
-    void showDetails(int pos) {
-        Lesson6DetailFragment details = (Lesson6DetailFragment) getSupportFragmentManager().findFragmentById(R.id.detailFramecontainer);
-        if (details == null || details.getPosition() != pos) {
-            details = Lesson6DetailFragment.newInstance(pos);
-            getSupportFragmentManager().beginTransaction().replace(R.id.detailFramecontainer, details).commit();
-        }
-    }
-
+//        lesson6ListFragment = (Lesson6ListFragment) getSupportFragmentManager().findFragmentById(R.id.listFragment);
+//
+//
+//        if (savedInstanceState != null)
+//            position = savedInstanceState.getInt("position");
+//            showDetails(position);
+   }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -55,12 +55,39 @@ public class Lesson6Activity extends AppCompatActivity implements OnElementClick
         }
     }
 
+     void showDetails(int pos) {
+
+             lesson6DetailFragment = (Lesson6DetailFragment) getSupportFragmentManager().findFragmentById(R.id.detailFragment);
+             if (lesson6DetailFragment == null ) {
+                 Intent intent = new Intent(this, Lesson6DetailActivity.class);
+                 intent.putExtra("position", position);
+
+                 startActivity(intent);
+//                 lesson6DetailFragment = lesson6DetailFragment.newInstance(pos);
+//                 getSupportFragmentManager().beginTransaction()
+//                         .replace(R.id.cont, lesson6DetailFragment).commit();
+             }
+          else {
+                 //lesson6DetailFragment.setPosition(pos);
+                 getSupportFragmentManager().beginTransaction().replace(R.id.detailFragment, lesson6DetailFragment).commit();
+
+         }
+
+
+
+    }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt("position", position);
+    public void itemClick(int pos) {
+        position = pos;
+        showDetails(position);
     }
+
+//    @Override
+//    protected void onSaveInstanceState(Bundle outState) {
+//        super.onSaveInstanceState(outState);
+//        outState.putInt("position", position);
+//    }
 
     @Override
     public void showNext() {
@@ -72,8 +99,5 @@ public class Lesson6Activity extends AppCompatActivity implements OnElementClick
 
     }
 
-    @Override
-    public void itemClick(int position) {
 
-    }
 }
